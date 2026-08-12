@@ -1,4 +1,4 @@
-# DataVine Analytics — ML Prototype Suite (Group 13)
+# DataVine Analytics — ML Prototype Suite
 
 A set of three machine-learning prototypes built for a boutique consulting group,
 each solving a different client problem: classifying wines, recommending animal
