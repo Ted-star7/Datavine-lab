@@ -1,0 +1,8 @@
+# Default owner — every PR requests a review from the repo owner.
+*                                   @Ted-star7
+
+# Optional per-area owners (uncomment and set GitHub usernames):
+# /notebooks/01_wine_classification.ipynb   @dennis-username
+# /notebooks/02_feed_recommendation.ipynb   @jeff-username
+# /notebooks/03_arrests_clustering.ipynb    @eglen-username @Ted-star7
+
