@@ -106,7 +106,7 @@ variables or database configuration — all data is local CSV files in `data/`.
 2. Run the imports cell.
 3. Load data with `pd.read_csv('../data/wine.csv')` and run each section top to bottom: inspect → standardize → model → evaluate.
 4. Follow the markdown checklist at the top — it maps 1:1 to the grading rubric.
-5. When all three task notebooks are done, run `04_integration_evaluation.ipynb` for the combined summary.
+
 
 ## Data Reference
 
@@ -116,13 +116,6 @@ variables or database configuration — all data is local CSV files in `data/`.
 | `chickwts.csv` | 71 | `weight`, `feed` | feed recommendation |
 | `USArrests.csv` | 50 | `Murder`, `Assault`, `UrbanPop`, `Rape`, `State` | clustering |
 
-## Engineering Decisions
 
-- **One notebook per person** — the deliberate choice that prevents merge conflicts. Because everyone edits a different file.
-- **Protected `main` + pull requests** — no direct pushes to `main`; all work merges through reviewed PRs (enforced by CODEOWNERS), so the main branch stays stable and every change is checked.
-- **Data committed to the repo** — the datasets are small, so we version them directly. This guarantees every teammate and the grader run on identical data.
-- **Self-contained notebooks** — each notebook loads and preprocesses its own data with plain pandas/scikit-learn, so it can be read and run start to finish with no hidden shared code.
-- **Pinned `requirements.txt`** — locks library versions so the code behaves the same on every machine.
-- **PCA before every model** — dimensionality reduction is applied consistently (95% variance for k-NN, 1 component for recommendation, 2 for clustering) to meet the rubric and reduce noise.
 
 
